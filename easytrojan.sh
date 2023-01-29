@@ -7,7 +7,7 @@
 
 trojan_passwd=$1
 caddy_domain=$2
-address_ip=$(curl ipv4.ip.sb)
+address_ip=$(curl ifconfig.me)
 nip_domain=${address_ip}.nip.io
 check_port=$(ss -Hlnp sport = :80 or sport = :443)
 
